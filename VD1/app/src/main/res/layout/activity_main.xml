@@ -10,17 +10,15 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/nutSO1"
-        android:text="Nut so 1"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:background="#873895"
-        android:layout_width="100dp"
+        android:layout_width="159dp"
         android:layout_height="40dp"
         android:layout_margin="10dp"
-        >
+        android:background="#873895"
+        android:text="Nut so 1"
+        android:textColor="@color/black"
+        android:textSize="20dp">
 
     </Button>
     <Button
