@@ -1,6 +1,8 @@
 package cntt3.vd2;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,37 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    void XuLyCong(View v){
+        //B1: lay du lieu
+        //B1.1: tim edittext
+       EditText editTextSo1 = (EditText)findViewById(R.id.edtSo1);
+       EditText editTextSo2 = (EditText)findViewById(R.id.edtSo2);
+       //B1.2: Lay du lieu tu dieu khien
+
+       String soThu1 = editTextSo1.getText().toString();
+       String soThu2 = editTextSo2.getText().toString();
+       //B1.3: Chuyen du lieu tu chuoi thanh so
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        //B2:Tinh toan
+        float Tong = soA + soB;
+        //B3: Hien thi ket qua
+        //B3.1: Tim edittext
+        EditText editTextKetQua = (EditText)findViewById(R.id.edtKetQua);
+        //B3.2: Chuan bi du lieu xuat
+        String chuoiKQ = String.valueOf(Tong);
+        //B3.3: gan ket qua len dkhien
+        editTextKetQua.setText(chuoiKQ);
+
+    }
+    void XuLyTru(View v){
+
+    }
+    void XuLyNhan(View v){
+
+    }
+    void XuLyChia(View v){
+
+    }
+
 }
