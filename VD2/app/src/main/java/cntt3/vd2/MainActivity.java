@@ -7,6 +7,7 @@ import android.widget.EditText;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
+import androidx.core.view.ContentInfoCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    void XuLyCong(View v){
+    public void XuLyCong(View v){
         //B1: lay du lieu
         //B1.1: tim edittext
        EditText editTextSo1 = (EditText)findViewById(R.id.edtSo1);
@@ -46,14 +47,42 @@ public class MainActivity extends AppCompatActivity {
         editTextKetQua.setText(chuoiKQ);
 
     }
-    void XuLyTru(View v){
-
+    public void XuLyTru(View v){
+        //B1: Lay du lieu
+        EditText editTextSo1 = (EditText)findViewById(R.id.edtSo1);
+        EditText editTextSo2 = (EditText)findViewById(R.id.edtSo2);
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Hieu = soA - soB;
+        EditText editTextKetQua = (EditText)findViewById(R.id.edtKetQua);
+        String chuoiKQ = String.valueOf(Hieu);
+        editTextKetQua.setText(chuoiKQ);
     }
-    void XuLyNhan(View v){
-
+    public void XuLyNhan(View v){
+        EditText editTextSo1 = (EditText)findViewById(R.id.edtSo1);
+        EditText editTextSo2 = (EditText)findViewById(R.id.edtSo2);
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Tich = soA * soB;
+        EditText editTextKetQua = (EditText)findViewById(R.id.edtKetQua);
+        String chuoiKQ = String.valueOf(Tich);
+        editTextKetQua.setText(chuoiKQ);
     }
-    void XuLyChia(View v){
-
+    public void XuLyChia(View v){
+        EditText editTextSo1 = (EditText)findViewById(R.id.edtSo1);
+        EditText editTextSo2 = (EditText)findViewById(R.id.edtSo2);
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Thuong = soA / soB;
+        EditText editTextKetQua = (EditText)findViewById(R.id.edtKetQua);
+        String chuoiKQ = String.valueOf(Thuong);
+        editTextKetQua.setText(chuoiKQ);
     }
 
 }

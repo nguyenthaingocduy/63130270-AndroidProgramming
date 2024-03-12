@@ -101,14 +101,15 @@
         android:text="Kết Quả:"
         android:textSize="20dp"
         android:textColor="@color/black"/>
-<EditText
-    android:id="@+id/edtKetQua"
-    android:paddingLeft="10dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Noi hien ket qua"
-    android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/edtKetQua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Noi hien ket qua"
+            android:paddingLeft="10dp" />
 
 
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
