@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             String soThu2 = edtSoB.getText().toString();
             float soA = Float.parseFloat(soThu1);
             float soB = Float.parseFloat(soThu2);
-            float Tich = soA - soB;
+            float Tich = soA * soB;
             String chuoiKQ = String.valueOf(Tich);
             tvKetQua.setText(chuoiKQ);
 
