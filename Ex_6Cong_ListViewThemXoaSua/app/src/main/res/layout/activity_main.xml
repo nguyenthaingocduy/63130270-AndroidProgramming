@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="DANH SÁCH CÁC TỈNH THÀNH VN"
+        android:text="DANH SÁCH CÁC TỈNH THÀNH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +49,8 @@
             android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tên tỉnh thành"
-            android:textSize="16sp" />
+            android:text="Ten Tinh Thanh"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/tenTinh"
@@ -83,7 +83,7 @@
             android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:onClick="Add"
-            android:text="Thêm"
+            android:text="Add"
             android:textColor="#dad7cd" />
 
         <Button
@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:onClick="Delete"
-            android:text="Xóa"
+            android:text="Delete"
             android:textColor="#dad7cd" />
 
         <Button
@@ -104,7 +104,7 @@
             android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:onClick="Edit"
-            android:text="Sửa"
+            android:text="Edit"
             android:textColor="#dad7cd" />
     </LinearLayout>
 
