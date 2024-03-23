@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import java.time.Instant;
 import ntu63130270.cau2_appthoitiet.Domains.Hourly;
@@ -37,7 +39,7 @@ public class HourlyAdapters extends RecyclerView.Adapter<HourlyAdapters.viewHold
     @Override
     public void onBindViewHolder(@NonNull HourlyAdapters.viewHolder holder, int position) {
         holder.hourTxt.setText(items.get(position).getHour());
-        holder.tempTxt.setText(items.get(position).getTemp()+ "*");
+        holder.tempTxt.setText(items.get(position).getTemp()+ "°");
 
 
         int drawableResourceId= holder.itemView.getResources()
@@ -60,6 +62,8 @@ public class HourlyAdapters extends RecyclerView.Adapter<HourlyAdapters.viewHold
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             hourTxt=itemView.findViewById(R.id.hourTxt);
+            tempTxt=itemView.findViewById(R.id.tempTxt);
+            pic=itemView.findViewById(R.id.pic);
         }
     }
 }

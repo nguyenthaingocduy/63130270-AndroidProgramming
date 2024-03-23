@@ -32,10 +32,10 @@
             app:srcCompat="@drawable/cloudy_sunny" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/tempTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="20"
+            android:text="20°"
             android:textSize="18dp"
             android:textColor="@color/white"
             android:textAlignment="center"
