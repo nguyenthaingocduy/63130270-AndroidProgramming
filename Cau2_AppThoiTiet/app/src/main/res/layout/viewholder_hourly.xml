@@ -15,21 +15,31 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/hourTxt"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/pic"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/cloudy_sunny" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="20"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
