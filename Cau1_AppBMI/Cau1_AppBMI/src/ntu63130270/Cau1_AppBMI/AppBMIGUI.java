@@ -22,31 +22,15 @@ import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
 import javax.swing.JTable;
 
-public class AppBMIGUI
-extends JFrame {
+public class AppBMIGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel khungNoiDung;
 	private JTextField chiSoChieuCao;
 	private JTextField chiSoCanNang;
 	private JTextField chiSoBMI;
-	//-----------------------------------------------------------------
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					AppBMIGUI frame = new AppBMIGUI();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-	//-------------------------------------------------------------------
 	
-	//-------------------------------------------------------------------
 	public AppBMIGUI() {_
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation=(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 401, 603);
 		khungNoiDung = new JPanel();
 		khungNoiDung.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -209,5 +193,20 @@ extends JFrame {
 		panel_2.add(lbNewLabel_11);
 		
 	}
+	//-----------------------------------------------------------------
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AppBMIGUI frame = new AppBMIGUI();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+
 }
 
