@@ -179,5 +179,34 @@ public class AppBMI_GUI extends JFrame {
 		lbNewLabel_4.setBounds(39, 21, 83, 16);
 		panel_2.add(lbNewLabel_4);
 		
+		JLabel lbNewLabel_5 = new JLabel("18.5 to 24.9");
+		lbNewLabel_5.setBounds(39, 49, 83, 16);
+		panel_2.add(lbNewLabel_5);
+		
+		JLabel lbNewLabel_6 = new JLabel("25 to 29.9");
+		lbNewLabel_6.setBounds(39, 77, 83, 16);
+		panel_2.add(lbNewLabel_6);
+		
+		JLabel lbNewLabel_7 = new JLabel(">30");
+		lbNewLabel_7.setBounds(39, 103, 83, 16);
+		panel_2.add(lbNewLabel_7);
+		
+		JLabel lbNewLabel_8 = new JLabel("Thiếu cân");
+		lbNewLabel_8.setBounds(251, 21, 83, 16);
+		panel_2.add(lbNewLabel_8);
+		
+		JLabel lbNewLabel_9 = new JLabel("Cân nặng bình thường");
+		lbNewLabel_9.setBounds(251, 49, 103, 16);
+		panel_2.add(lbNewLabel_9);
+		
+		JLabel lbNewLabel_10 = new JLabel("Thừa cân");
+		lbNewLabel_10.setBounds(251, 77, 103, 16);
+		panel_2.add(lbNewLabel_10);
+		
+		JLabel lbNewLabel_11 = new JLabel("Béo phì");
+		lbNewLabel_11.setBounds(251, 103, 83, 16);
+		panel_2.add(lbNewLabel_11);
+		
+		
 
 }
