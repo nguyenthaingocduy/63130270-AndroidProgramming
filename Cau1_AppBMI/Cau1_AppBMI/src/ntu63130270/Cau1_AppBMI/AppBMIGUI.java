@@ -22,7 +22,8 @@ import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
 import javax.swing.JTable;
 
-public class AppBMI_GUI extends JFrame {
+public class AppBMIGUI
+extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel khungNoiDung;
 	private JTextField chiSoChieuCao;
@@ -33,7 +34,7 @@ public class AppBMI_GUI extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AppBMI_GUI frame = new AppBMI_GUI();
+					AppBMIGUI frame = new AppBMIGUI();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,7 +45,7 @@ public class AppBMI_GUI extends JFrame {
 	//-------------------------------------------------------------------
 	
 	//-------------------------------------------------------------------
-	public AppBMI_GUI() {_
+	public AppBMIGUI() {_
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 401, 603);
 		khungNoiDung = new JPanel();
@@ -207,6 +208,6 @@ public class AppBMI_GUI extends JFrame {
 		lbNewLabel_11.setBounds(251, 103, 83, 16);
 		panel_2.add(lbNewLabel_11);
 		
-		
-
+	}
 }
+
