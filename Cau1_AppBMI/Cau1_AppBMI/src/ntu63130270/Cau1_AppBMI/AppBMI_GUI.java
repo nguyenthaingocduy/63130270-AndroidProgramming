@@ -43,7 +43,21 @@ public class AppBMI_GUI extends JFrame {
 	}
 	//-------------------------------------------------------------------
 	
-	//Tao Frame
-	public a
+	//-------------------------------------------------------------------
+	public AppBMI_GUI() {_
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 401, 603);
+		khungNoiDung = new JPanel();
+		khungNoiDung.setBorder(new EmptyBorder(5, 5, 5, 5));
+		
+		setContentPane(khungNoiDung);
+		khungNoiDung.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(255, 182, 193));
+		panel.setBounds(0, 0, 401, 102);
+		khungNoiDung.add(panel);
+		panel.setLayout(null);
+	}
 
 }
