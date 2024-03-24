@@ -31,7 +31,7 @@ public class AppBMIGUI extends JFrame {
 	
 	public AppBMIGUI(){
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 401, 603);
+		setBounds(200, 200, 401, 630);
 		khungNoiDung = new JPanel();
 		khungNoiDung.setBorder(new EmptyBorder(5, 5, 5, 5));
 		
@@ -44,11 +44,11 @@ public class AppBMIGUI extends JFrame {
 		khungNoiDung.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lbNewLabel = new JLabel("Chỉ số khối cơ thể bmi");
+		JLabel lbNewLabel = new JLabel("Chỉ số khối cơ thể");
 		lbNewLabel.setForeground(new Color(0, 0, 0));
 		lbNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lbNewLabel.setFont(new Font("Lucida Grande", Font.BOLD, 34));
-		lbNewLabel.setBounds(41, 17, 322, 45);
+		lbNewLabel.setBounds(41, 50, 305, 45);
 		panel.add(lbNewLabel);
 		
 		JPanel panel_1 = new JPanel();
@@ -59,13 +59,13 @@ public class AppBMIGUI extends JFrame {
 		
 		JLabel lbNewLabel_1 = new JLabel("Cân nặng (kg):");
 		lbNewLabel_1.setFont(new Font("Lucida Grande", Font.BOLD, 13));
-		lbNewLabel_1.setBounds(39, 70, 89, 16);
+		lbNewLabel_1.setBounds(39, 70, 100, 16);
 		panel_1.add(lbNewLabel_1);
 		
 		
 		JLabel lbNewLabel_2 = new JLabel("Chiều cao (m):");
 		lbNewLabel_2.setFont(new Font("Lucida Grande", Font.BOLD, 13));
-		lbNewLabel_2.setBounds(39, 31, 78, 16);
+		lbNewLabel_2.setBounds(39, 31, 100, 16);
 		panel_1.add(lbNewLabel_2);
 		
 		JLabel lbNewLabel_3 = new JLabel("BMI =");
@@ -95,7 +95,7 @@ public class AppBMIGUI extends JFrame {
 		status.setBounds(204, 143, 145, 26);
 		panel_1.add(status);
 		
-		JButton calculate = new JButton("Calculate");
+		JButton calculate = new JButton("Tính");
 		calculate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				double iCanNang = Double.parseDouble(chiSoCanNang.getText());
@@ -129,7 +129,7 @@ public class AppBMIGUI extends JFrame {
 		calculate.setBounds(29, 178, 117, 29);
 		panel_1.add(calculate);
 		
-		JButton clear = new JButton("Clear");
+		JButton clear = new JButton("Làm mới");
 		clear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				chiSoChieuCao.setText(null);
