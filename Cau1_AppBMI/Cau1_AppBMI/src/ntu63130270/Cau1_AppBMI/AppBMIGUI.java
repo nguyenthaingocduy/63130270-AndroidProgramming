@@ -29,8 +29,8 @@ public class AppBMIGUI extends JFrame {
 	private JTextField chiSoCanNang;
 	private JTextField chiSoBMI;
 	
-	public AppBMIGUI() {_
-		setDefaultCloseOperation=(JFrame.EXIT_ON_CLOSE);
+	public AppBMIGUI(){
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 401, 603);
 		khungNoiDung = new JPanel();
 		khungNoiDung.setBorder(new EmptyBorder(5, 5, 5, 5));
