@@ -39,7 +39,7 @@ public class AppBMIGUI extends JFrame {
 		khungNoiDung.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(255, 182, 193));
+		panel.setBackground(new Color(0, 150, 255));
 		panel.setBounds(0, 0, 401, 102);
 		khungNoiDung.add(panel);
 		panel.setLayout(null);
@@ -52,7 +52,7 @@ public class AppBMIGUI extends JFrame {
 		panel.add(lbNewLabel);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(new Color(255, 182, 193));
+		panel_1.setBackground(new Color(0, 150, 255));
 		panel_1.setBounds(0, 103, 401, 213);
 		khungNoiDung.add(panel_1);
 		panel_1.setLayout(null);
@@ -130,6 +130,7 @@ public class AppBMIGUI extends JFrame {
 		panel_1.add(calculate);
 		
 		JButton clear = new JButton("Làm mới");
+		clear.setBackground(new Color(111, 253, 111));
 		clear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				chiSoChieuCao.setText(null);
@@ -144,6 +145,7 @@ public class AppBMIGUI extends JFrame {
 		panel_1.add(clear);
 		
 		JButton exit = new JButton("Thoát ra");
+		exit.setBackground(new Color(250, 120, 200));
 		exit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
@@ -155,7 +157,7 @@ public class AppBMIGUI extends JFrame {
 		panel_1.add(exit);
 		
 		JPanel panel_2 = new JPanel();
-		panel_2.setBackground(new Color(255, 182, 193));
+		panel_2.setBackground(new Color(0, 150, 255));
 		panel_2.setBounds(0, 315, 401, 260);
 		khungNoiDung.add(panel_2);
 		panel_2.setLayout(null);
