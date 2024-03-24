@@ -104,6 +104,26 @@ public class AppBMI_GUI extends JFrame {
 		panel_1.add(chiSoBMI);
 		chiSoBMI.setColumns(10);
 		
+		JLabel status = new JLabel("");
+		status.setFont(new Font("Lucida Grande", Font.BOLD, 13));
+		status.setHorizontalAlignment(SwingConstants.CENTER);
+		status.setBounds(204, 143, 145, 26);
+		panel_1.add(status);
+		
+		JButton calculate = new JButton("Calculate");
+		calculate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				double iCanNang = Double.parseDouble(chiSoCanNang.getText());
+				double iChieuCao = Double.parseDouble(chiSoChieuCao.getText());
+				double iBMI = iCanNang / (iChieuCao * iChieuCao);
+				
+				String cal_BMI = String.format("%.2f", iBMI);
+				bmiValue.setText(cal_BMI);
+				if (iBMI <= 18.5) 
+			}
+				
+				
+		
 	}
 
 }
