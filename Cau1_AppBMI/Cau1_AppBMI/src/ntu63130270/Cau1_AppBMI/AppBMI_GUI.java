@@ -72,11 +72,22 @@ public class AppBMI_GUI extends JFrame {
 		khungNoiDung.add(panel_1);
 		panel_1.setLayout(null);
 		
-		
-		JLabel lbNewLabel_1 = new JLabel("Chiều cao (m):");
+		JLabel lbNewLabel_1 = new JLabel("Cân nặng (kg):");
 		lbNewLabel_1.setFont(new Font("Lucida Grande", Font.BOLD, 13));
-		lbNewLabel_1.setBounds(39, 31, 78, 16);
+		lbNewLabel_1.setBounds(39, 70, 89, 16);
 		panel_1.add(lbNewLabel_1);
+		
+		
+		JLabel lbNewLabel_2 = new JLabel("Chiều cao (m):");
+		lbNewLabel_2.setFont(new Font("Lucida Grande", Font.BOLD, 13));
+		lbNewLabel_2.setBounds(39, 31, 78, 16);
+		panel_1.add(lbNewLabel_2);
+		
+		Label lblNewLabel_3 = new JLabel("BMI =");
+		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_3.setFont(new Font("Lucida Grande", Font.BOLD, 30));
+		lblNewLabel_3.setBounds(19, 92, 139, 50);
+		panel.add(lblNewLabel_3);
 	}
 
 }
