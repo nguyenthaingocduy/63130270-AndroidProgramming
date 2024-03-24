@@ -118,8 +118,23 @@ public class AppBMI_GUI extends JFrame {
 				double iBMI = iCanNang / (iChieuCao * iChieuCao);
 				
 				String cal_BMI = String.format("%.2f", iBMI);
-				bmiValue.setText(cal_BMI);
-				if (iBMI <= 18.5) 
+				chiSoBMI.setText(cal_BMI);
+				if (iBMI <= 18.5) {
+					chiSoBMI.setOpaque(true);
+					chiSoBMI.setBackground(Color.blue);
+					status.setForeground(Color.blue);
+					status.setText("Suy dinh dưỡng");
+				}else if(iBMI <= 24.9) {
+					chiSoBMI.setOpaque(true);
+					chiSoBMI.setBackground(Color.yellow);
+					status.setForeground(Color.yellow);
+					status.setText("Thừa cân");
+				}else if(iBMI >= 30) {
+					chiSoBMI.setOpaque(true);
+					chiSoBMI.setBackground(Color.red);
+					status.setForeground(Color.red);
+					status.setText("Béo phì");
+				}
 			}
 				
 				
