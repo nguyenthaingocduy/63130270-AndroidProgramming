@@ -83,11 +83,27 @@ public class AppBMI_GUI extends JFrame {
 		lbNewLabel_2.setBounds(39, 31, 78, 16);
 		panel_1.add(lbNewLabel_2);
 		
-		Label lblNewLabel_3 = new JLabel("BMI =");
-		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3.setFont(new Font("Lucida Grande", Font.BOLD, 30));
-		lblNewLabel_3.setBounds(19, 92, 139, 50);
-		panel.add(lblNewLabel_3);
+		JLabel lbNewLabel_3 = new JLabel("BMI =");
+		lbNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lbNewLabel_3.setFont(new Font("Lucida Grande", Font.BOLD, 30));
+		lbNewLabel_3.setBounds(19, 92, 139, 50);
+		panel_1.add(lbNewLabel_3);
+		
+		chiSoChieuCao = new JTextField();
+		chiSoChieuCao.setBounds(219, 26, 130, 26);
+		panel_1.add(chiSoChieuCao);
+		chiSoChieuCao.setColumns(10);
+		
+		chiSoCanNang = new JTextField();
+		chiSoCanNang.setBounds(219, 65, 130, 26);
+		panel_1.add(chiSoCanNang);
+		chiSoCanNang.setColumns(10);
+		
+		chiSoBMI = new JTextField();
+		chiSoBMI.setBounds(219, 98, 130, 44);
+		panel_1.add(chiSoBMI);
+		chiSoBMI.setColumns(10);
+		
 	}
 
 }
