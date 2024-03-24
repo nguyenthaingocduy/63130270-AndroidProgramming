@@ -139,6 +139,45 @@ public class AppBMI_GUI extends JFrame {
 				
 				
 		
-	}
+	});
+		calculate.setFont(new Font("Lucida Grande", Font.BOLD, 13));
+		calculate.setBounds(29, 178, 117, 29);
+		panel_1.add(calculate);
+		
+		JButton clear = new JButton("Clear");
+		clear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				chiSoChieuCao.setText(null);
+				chiSoCanNang.setText(null);
+				chiSoBMI.setText(null);
+				
+			}
+		});
+		
+		clear.setFont(new Font("Lucida Grande", Font.BOLD, 13));
+		clear.setBounds(158, 178, 117, 29);
+		panel_1.add(clear);
+		
+		JButton exit = new JButton("Thoát ra");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		exit.setFont(new Font("Lucida Grande", Font.BOLD, 13));
+		exit.setBounds(274, 178, 117, 29);
+		panel_1.add(exit);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(255, 182, 193));
+		panel_2.setBounds(0, 315, 401, 260);
+		khungNoiDung.add(panel_2);
+		panel_2.setLayout(null);
+		
+		JLabel lbNewLabel_4 = new JLabel("<18.5");
+		lbNewLabel_4.setBounds(39, 21, 83, 16);
+		panel_2.add(lbNewLabel_4);
+		
 
 }
