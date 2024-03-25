@@ -71,7 +71,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/fa" />
+        app:srcCompat="@drawable/fa"
+        android:onClick="button_fa"
+        />
 
     <ImageButton
         android:id="@+id/imageView5"
@@ -83,7 +85,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/tiktok" />
+        app:srcCompat="@drawable/tiktok"
+        android:onClick="button_tiktok"
+        />
 
     <ImageButton
         android:id="@+id/imageView6"
@@ -95,6 +99,8 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/github" />
+        app:srcCompat="@drawable/github"
+        android:onClick="button_github"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
