@@ -113,6 +113,11 @@ public class AppBMIGUI extends JFrame {
 					chiSoBMI.setOpaque(true);
 					chiSoBMI.setBackground(Color.yellow);
 					status.setForeground(Color.yellow);
+					status.setText("Cân nặng bình thường");
+				}else if(iBMI > 24.9|| iBMI <=29.9){
+					chiSoBMI.setOpaque(true);
+					chiSoBMI.setBackground(Color.yellow);
+					status.setForeground(Color.yellow);
 					status.setText("Thừa cân");
 				}else if(iBMI >= 30) {
 					chiSoBMI.setOpaque(true);
