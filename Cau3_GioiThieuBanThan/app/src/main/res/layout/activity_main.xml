@@ -19,5 +19,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/circular"
         app:srcCompat="@drawable/avatar" />
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>
