@@ -57,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<LandScape> getDataForRecylerView(){
         ArrayList<LandScape> dsDuLieu = new ArrayList<LandScape>();
-        LandScape landScape1 = new LandScape("img_4", "Bear So cute");
+        LandScape landScape1 = new LandScape("img_4.png", "Bear So cute");
         dsDuLieu.add(landScape1);
-        dsDuLieu.add(new LandScape("img_5", "Bear so cute"));
-        dsDuLieu.add(new LandScape("Img_3", "Bear so yummy"));
-        dsDuLieu.add(new LandScape("img_1", "Bear so yummy"));
+        dsDuLieu.add(new LandScape("img_5.png", "Bear so cute"));
+        dsDuLieu.add(new LandScape("Img_3.png", "Bear so yummy"));
+        dsDuLieu.add(new LandScape("img_1.png", "Bear so yummy"));
         return dsDuLieu;
     }
 }
