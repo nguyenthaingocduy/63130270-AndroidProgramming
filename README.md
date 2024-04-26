@@ -6,6 +6,6 @@
 ### <i>About</i>
 
 -  **Learning :** Android :zap: | 
--  **Languages :** JavaScript💻
+-  **Languages :** Java💻
 -  **Hobbies :** Read the book📕 & Music :headphones:
 -  **Fact:** It's never too late to get started 🎯
