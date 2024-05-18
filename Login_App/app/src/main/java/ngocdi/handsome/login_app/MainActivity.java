@@ -1,5 +1,6 @@
 package ngocdi.handsome.login_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,14 +33,13 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = usernameInput.getText().toString();
-                String password = passwordInput.getText().toString();
-                Log.i("Test Credentials", "Username : " + username + " and Password : " + password);
+                Intent myIntent = new Intent(MainActivity.this, calculate_interface.class);
             }
         });
-        {
 
-        }
+        //xu lu click
+
+
 
 
 
