@@ -55,7 +55,7 @@ public class BestDealAdapter extends RecyclerView.Adapter<BestDealAdapter.viewho
 
     @Override
     public int getItemCount() {
-        return 0;
+        return items.size();
     }
 
     public class viewholder extends RecyclerView.ViewHolder {

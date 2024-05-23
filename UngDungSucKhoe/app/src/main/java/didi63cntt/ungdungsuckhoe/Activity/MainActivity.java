@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import didi63cntt.ungdungsuckhoe.Adapter.BestDealAdapter;
 import didi63cntt.ungdungsuckhoe.Adapter.CategoryAdapters;
 import didi63cntt.ungdungsuckhoe.Domain.Category_Domain;
 import didi63cntt.ungdungsuckhoe.Domain.ItemsDomain;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         initRecyclerViewCat();
         initLocation();
-
+        initRecyclerViewBestDeal();
 
 
 
@@ -67,14 +68,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void initRecyclerViewBestDeal(){
+        recyclerViewBestDeal = findViewById(R.id.bestView);
+        recyclerViewBestDeal.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        bestDealAdapter= new BestDealAdapter(getData());
+        recyclerViewBestDeal.setAdapter(bestDealAdapter);
+    }
     public ArrayList<ItemsDomain> getData() {
         ArrayList<ItemsDomain> items = new ArrayList<>();
         items.add(new ItemsDomain("orange","Fresh Orange" ,6.2,"With it vibrant orange hue and a burst of refreshing" + "citrus flavor, the juicy orange is a natural source of" +"vitamin C, invigorating your senses and" +" supporting your immune system. A delightful snack" +" that combines health and tatse.",4.2));
         items.add(new ItemsDomain("apple", "Fresh Apple",6.5,"Apples, originating in Central Asia, come in many varieties from sweet to sour. High in carbs and rich in vitamin C, they’re versatile, commonly eaten as snacks or used in desserts.",4.8));
-        items.add(new ItemsDomain("watermelon", , , , , , ));
-        items.add(new ItemsDomain("berry", , , , , , ));
-        items.add(new ItemsDomain("pineapple", , , , , , ));
-        items.add(new ItemsDomain("strawberry", , , , , , ));
+        items.add(new ItemsDomain("watermelon","Fresh Watermelon",5.1,"Originating in Southern Africa, watermelons thrive in tropical regions and are 91.5% water. They vary in size, with the largest recorded at 159 kg from Tennessee. Sweet and juicy, they offer various nutrients per cup (154g).",4.9));
+        items.add(new ItemsDomain("berry","Fresh BlackBerry",6,"Blackberries, small berries with a big taste, grow on brambles. They’re commonly cultivated but also found wild, which have more polyphenols. Low in fructose, they pair well with cream. Rich in vitamin C, blackberries offer significant health benefits.",4.5));
+        items.add(new ItemsDomain("pineapple","Fresh Pineapple",10,"Originating from South America, pineapples are now common in tropical regions like the Philippines and the Caribbean. With firm yellow flesh and a sweet, juicy taste, they are used in juices, smoothies, desserts, and pizzas.",3));
+        items.add(new ItemsDomain("strawberry","Fresh Strawberry",12,"Strawberries, a beloved fruit, are technically accessory fruits. Eaten fresh or in desserts, they taste and smell sweet. Their flavor and scent are common in candy, soaps, creams, and lip balms.",4));
         return items;
     }
 
