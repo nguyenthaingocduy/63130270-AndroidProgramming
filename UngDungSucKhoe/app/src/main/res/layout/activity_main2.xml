@@ -39,7 +39,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/bell" />
+                    android:src="@drawable/bell" />
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -48,7 +48,7 @@
                     android:layout_marginTop="4dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView5"
-                    tools:srcCompat="@drawable/location" />
+                    android:src="@drawable/location" />
 
                 <Spinner
                     android:id="@+id/spinner3"
@@ -98,7 +98,7 @@
                         android:layout_height="wrap_content"
                         tools:layout_editor_absoluteX="34dp"
                         tools:layout_editor_absoluteY="10dp"
-                        tools:srcCompat="@drawable/settings" />
+                        android:src="@drawable/settings" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
@@ -117,7 +117,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/basket_banner" />
+                    android:src="@drawable/basket_banner" />
 
                 <TextView
                     android:id="@+id/textView6"
